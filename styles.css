@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 #grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -12,8 +16,6 @@
   padding: 10px;
 }
 
-/* FIXED using span */
-
 #grid div:nth-child(1) {
   grid-column: span 4;
 }
@@ -22,26 +24,9 @@
   grid-row: span 4;
 }
 
-#grid div:nth-child(3) {
-  grid-column: span 1;
-}
-
-#grid div:nth-child(4) {
-  grid-column: span 2;
-}
-
+#grid div:nth-child(4),
 #grid div:nth-child(5) {
   grid-column: span 2;
-}
-
-#grid div:nth-child(6) {
-  grid-column: span 1;
-}
-
-#grid div:nth-child(7),
-#grid div:nth-child(8),
-#grid div:nth-child(9) {
-  grid-column: span 1;
 }
 
 #grid div:nth-child(10) {
